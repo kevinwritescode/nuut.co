@@ -3,11 +3,48 @@
     <head>
         <title>KevinNuut.com{block:PostSummary} - {PostSummary}{/block:PostSummary}{block:TagPage} - '{Tag}' Tags{/block:TagPage}{block:SearchPage} - '{SearchQuery}' Search{/block:SearchPage}</title>
 
+        <link rel="shortcut icon" href="{Favicon}"/>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="A personal blog of fashion, design, art, and humor. {block:PostSummary}{PostSummary}{/block:PostSummary}{block:TagPage}'{Tag}' Tags{/block:TagPage}{block:SearchPage}'{SearchQuery}' Search{/block:SearchPage}" />
         <meta name="keywords" content="kevin, nuut, artwork, tumblr, twitter, blog, design, fashion, shoes, austin, texas" />
+        <meta name="google-site-verification" content="6-mxNtzO4cvr9jJ2ud1SmXimZBHpQx9TXARLsT_uDik" />
 
         <link rel="stylesheet" href="http://tumblr.kevinnuut.com/design.css" type="text/css" />
+        <link rel="alternate" href="/rss" type="application/rss+xml" />
+
+        <style type="text/css">
+            .recommend-me {
+                display: block; text-align: center; font-size: 1.4em; text-shadow: 0 0 8px #f1413b; -webkit-box-shadow: 0 0 12px #fff; -moz-box-shadow: 0 0 12px #fff; color: #fff; line-height: 1; padding: 8px; margin-bottom: 12px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background: #fc8576; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fc8576), to(#f1413b)); border: 1px solid #ff524c;
+            }
+            .recommend-me:hover {
+                background: #fc9d90; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fc9d90), to(#f25852));
+            }
+            .facebook {
+                display: block; text-align: center; -webkit-box-shadow: 0 0 12px #fff; -moz-box-shadow: 0 0 12px #fff; color: #fff; line-height: 1; padding: 0; margin-bottom: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background: #ffffff; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f0f2f7)); border: 1px solid #29447e;
+            }
+
+            #bannerDiv { padding-bottom: 12px; }
+
+#tumblrchat {
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.20);
+  webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.20);
+  width: 533px;
+  height: 300px;
+  margin: 10px 0 2px 57px;
+  
+}
+
+.side-following a {
+border-bottom: none;
+}
+
+.side-following img {
+border-radius: 4px;
+margin: 0 6px 12px 6px;
+}
+        </style>
 
         <!--[if IE]>
         <style type="text/css">
@@ -15,7 +52,7 @@
                 line-height: 40px;
             }
         </style>
-	    <![endif]-->
+	<![endif]-->
     </head>
 
     <body>
@@ -81,9 +118,9 @@
                         <div class="post-header"></div>
                         <div class="post-body">
                             <div class="post-content pagination"> {block:Pagination}
-                                {block:PreviousPage} <a href="{PreviousPage}">&#171; Previous</a> {/block:PreviousPage}
+                                {block:PreviousPage} <a href="{PreviousPage}">Newer</a> {/block:PreviousPage}
                                 <span class="paginationDetails"></span>
-                                {block:NextPage} <a href="{NextPage}">Next &#187;</a> {/block:NextPage}
+                                {block:NextPage} <a href="{NextPage}">Older</a> {/block:NextPage}
                                 {/block:Pagination} </div>
                             <br class="clear" />
                         </div>
@@ -289,17 +326,17 @@
                                 <div class="post-content pagination">
                                 	{block:Pagination}
                                     {block:PreviousPage}
-                                    <a href="{PreviousPage}">&#171; Previous</a>
+                                    <a href="{PreviousPage}">Newer</a>
                                     {/block:PreviousPage}
                                     <span class="paginationDetails"></span>
                                     {block:NextPage}
-                                    <a href="{NextPage}">Next &#187;</a>
+                                    <a href="{NextPage}">Older</a>
                                     {/block:NextPage}
                                     {/block:Pagination}
                                 </div>
                                 <br class="clear" />
                             </div>
-                            <div class="post-footer footer"> &copy; KevinNuut.com &amp; Respective Artist. Powered by <a href="http://tumblr.com/" title="Create Your Own Tumblog Today!" target="_blank">Tumblr</a>. </div>
+                            <div class="post-footer footer"> &copy; KevinNuut.com &amp; Respective Artists. Powered by <a href="http://tumblr.com/" title="Create Your Own Tumblog Today!" target="_blank">Tumblr</a>. </div>
                         </div>
                     </div>
                 </div>
@@ -309,17 +346,13 @@
                     <img id="side-portrait" src="{PortraitURL-96}" alt="portrait" />
                     
                     <div id="side-body">
-                        <div id="bannerDiv">
-                            <a href="http://thesartorialartist.com/" class="banner bannerTsa" title="Sketches Inspired By The Sartorialist!" target="_blank">
-                                TheSartorialArtist.com
-                            </a><a href="http://austintweetup.com/" class="banner bannerTweetup" title="Tumblr and Twitter Events Around Austin!" target="_blank">
-                                AustinTweetup.com
-                            </a><a href="http://youtube.com/lorenandtxm" class="banner bannerAthwt" title="Episodic Machinima Soap Opera with Hamsters!" target="_blank">
-                                ATHWT.com
-                            </a><div class="clear"></div>
-                        </div>
+<a href="http://www.tumblr.com/directory/recommend/designers/kevinnuut" title="Recommend Me" class="recommend-me"><strong>+</strong> Recommend Me</a>
 
-                        <div class="side-block">
+<div class="facebook"><iframe src="http://www.facebook.com/plugins/likebox.php?id=117990698235589&amp;width=292&amp;connections=0&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe></div>
+
+<a href ="http://www.behance.net/KevinNuut" target ="_blank" style = "-webkit-box-shadow: white 0px 0px 12px; margin: 12px 0 4px 0; border: none; display: block; height: 60px; background-image:url(http://assets.behance.net//img/portfolio/blue/wide2.jpg?cb=798100946); -webkit-border-radius: 4px; -moz-border-radius:4px;"><img src='http://behance.vo.llnwd.net/e1/userCover?user_id=90284&size=50' style='width:50px !important; height:50px !important; margin-top:5px !important; margin-left:5px !important; float: left !important; border-style:none !important;' /><span style='overflow: hidden !important; height: 0px !important; font-size: 0px !important; line-height: 0px !important; clear:both !important;'></span></a>
+
+                        <div class="side-block" style="margin-bottom: 4px;">
                             <script type="text/javascript"><!--
                             google_ad_client = "pub-7413795255296720";
                             /* KevinNuut.com Sidebar */
@@ -331,6 +364,16 @@
                             <script type="text/javascript"
                             src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                             </script>
+                        </div>
+
+                        <div id="bannerDiv">
+                            <a href="http://thesartorialartist.com/" class="banner bannerTsa" title="Sketches Inspired By The Sartorialist!" target="_blank">
+                                TheSartorialArtist.com
+                            </a><a href="http://austintweetup.com/" class="banner bannerTweetup" title="Tumblr and Twitter Events Around Austin!" target="_blank">
+                                AustinTweetup.com
+                            </a><a href="http://tumblrchat.com/" class="banner bannerChat" title="Chat with Other Tumblrs!" target="_blank">TumblrChat.com</a><a href="http://youtube.com/lorenandtxm" class="banner bannerAthwt" title="Episodic Machinima Soap Opera with Hamsters!" target="_blank">
+                                ATHWT.com
+                            </a><div class="clear"></div>
                         </div>
 
                         <div class="side-block">
@@ -357,12 +400,10 @@
 
                         {block:IndexPage}
                         {block:Following}
-                        <div class="side-block">
+                        <div class="side-block side-following">
                             <div class="side-title">TUMBLR PEEPS</div>
 
-                            {block:Followed}
-                            <a href="{FollowedURL}" title="{FollowedTitle}"> {FollowedName}</a>,
-                            {/block:Followed}
+                            {block:Followed}<a href="{FollowedURL}" title="{FollowedTitle}"><img src="{FollowedPortraitURL-48}" alt="{FollowedName}" /></a>{/block:Followed}
                         </div>
                        	{/block:Following}
                         {/block:IndexPage}
@@ -374,17 +415,18 @@
             </div>
         </div>
 
+        <input type="hidden" id="kt-current-page" value="{currentPage}" />
+        <input type="hidden" id="kt-total-pages" value="{totalPages}" />
+        <input type="hidden" id="kt-append-url" value="{block:SearchPage}/search/{URLSafeSearchQuery}{/block:SearchPage}{block:TagPage}/tagged/{URLSafeTag}{/block:TagPage}" />
+
         <!-- Prototype and Pagination -->
-        <script type="text/javascript" src="/javascript/prototype.js?4"></script>
-        <script type="text/javascript" src="http://tumblr.kevinnuut.com/primary.js"></script>
+        <script type="text/javascript" src="http://tumblr.kevinnuut.com/js/source/jquery.js"></script>
         <script type="text/javascript">
-            document.observe('dom:loaded', function() {
-                var details = $$('span.paginationDetails');
-                for (var i = 0; i < details.length; i++) {
-                    paginateMe(details[i], '{currentPage}', '{totalPages}', '{block:SearchPage}/search/{URLSafeSearchQuery}{/block:SearchPage}{block:TagPage}/tagged/{URLSafeTag}{/block:TagPage}');                
-                };
+            $(function() {
+                $('#side-body a[href="http://lacey.tumblr.com/"]').hide();
             });
         </script>
+        <script type="text/javascript" src="http://tumblr.kevinnuut.com/js/default.js"></script>
 
         <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=TXMdotcom"></script>
 
