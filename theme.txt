@@ -10,7 +10,7 @@
         <meta name="keywords" content="kevin, nuut, artwork, tumblr, twitter, blog, design, fashion, shoes, austin, texas" />
         <meta name="google-site-verification" content="6-mxNtzO4cvr9jJ2ud1SmXimZBHpQx9TXARLsT_uDik" />
 
-        <link rel="stylesheet" href="http://tumblr.kevinnuut.com/design.css" type="text/css" />
+        <link rel="stylesheet" href="http://c715257.r57.cf2.rackcdn.com/rackspace.css" type="text/css" />
         <link rel="alternate" href="/rss" type="application/rss+xml" />
 
         <style type="text/css">
@@ -117,14 +117,29 @@ margin: 0 6px 12px 6px;
                     <div class="post">
                         <div class="post-header"></div>
                         <div class="post-body">
-                            <div class="post-content pagination"> {block:Pagination}
-                                {block:PreviousPage} <a href="{PreviousPage}">Newer</a> {/block:PreviousPage}
-                                <span class="paginationDetails"></span>
-                                {block:NextPage} <a href="{NextPage}">Older</a> {/block:NextPage}
-                                {/block:Pagination} </div>
-                            <br class="clear" />
+							<div class="post-content pagination">
+								{block:Pagination}
+									{block:PreviousPage}
+										<a href="{PreviousPage}">Newer</a>
+									{/block:PreviousPage}
+
+									{block:JumpPagination length="5"}
+										{block:CurrentPage}
+											<span class="current_page">{PageNumber}</span>
+										{/block:CurrentPage}
+
+										{block:JumpPage}
+											<a class="jump_page" href="{URL}">{PageNumber}</a>
+										{/block:JumpPage}
+									{/block:JumpPagination}
+
+									{block:NextPage}
+										<a href="{NextPage}">Older</a>
+									{/block:NextPage}
+								{/block:Pagination}
+							</div>
+							<br class="clear" />
                         </div>
-                        <div class="post-footer footer"> Oh, hey there! Feel free to keep scrolling down or jump to another page. :) </div>
                     </div>
                     {/block:Post2}
                     <div class="post">
@@ -324,15 +339,25 @@ margin: 0 6px 12px 6px;
                             <div class="post-header"></div>
                             <div class="post-body">
                                 <div class="post-content pagination">
-                                	{block:Pagination}
-                                    {block:PreviousPage}
-                                    <a href="{PreviousPage}">Newer</a>
-                                    {/block:PreviousPage}
-                                    <span class="paginationDetails"></span>
-                                    {block:NextPage}
-                                    <a href="{NextPage}">Older</a>
-                                    {/block:NextPage}
-                                    {/block:Pagination}
+									{block:Pagination}
+										{block:PreviousPage}
+											<a href="{PreviousPage}">Newer</a>
+										{/block:PreviousPage}
+
+										{block:JumpPagination length="5"}
+											{block:CurrentPage}
+												<span class="current_page">{PageNumber}</span>
+											{/block:CurrentPage}
+
+											{block:JumpPage}
+												<a class="jump_page" href="{URL}">{PageNumber}</a>
+											{/block:JumpPage}
+										{/block:JumpPagination}
+
+										{block:NextPage}
+											<a href="{NextPage}">Older</a>
+										{/block:NextPage}
+									{/block:Pagination}
                                 </div>
                                 <br class="clear" />
                             </div>
@@ -378,7 +403,6 @@ margin: 0 6px 12px 6px;
 
                         <div class="side-block">
                             <div class="side-title padding-bottom-4">PEOPLE I HEART</div>
-
                             <a href="http://www.ayankeeintexas.com/" title="A Yankee In Texas" target="_blank">A Yankee In Texas</a> |
                             <a href="http://albotas.com/" title="Albotas" target="_blank">Albotas</a> |
                             <a href="http://americaisthebest.com/" title="America Is The Best" target="_blank">America Is The Best</a> |
@@ -414,19 +438,6 @@ margin: 0 6px 12px 6px;
                 <br class="clear" />
             </div>
         </div>
-
-        <input type="hidden" id="kt-current-page" value="{currentPage}" />
-        <input type="hidden" id="kt-total-pages" value="{totalPages}" />
-        <input type="hidden" id="kt-append-url" value="{block:SearchPage}/search/{URLSafeSearchQuery}{/block:SearchPage}{block:TagPage}/tagged/{URLSafeTag}{/block:TagPage}" />
-
-        <!-- Prototype and Pagination -->
-        <script type="text/javascript" src="http://tumblr.kevinnuut.com/js/source/jquery.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                $('#side-body a[href="http://lacey.tumblr.com/"]').hide();
-            });
-        </script>
-        <script type="text/javascript" src="http://tumblr.kevinnuut.com/js/default.js"></script>
 
         <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=TXMdotcom"></script>
 
