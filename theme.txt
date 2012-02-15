@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>KevinNuut.com{block:PostSummary} - {PostSummary}{/block:PostSummary}{block:TagPage} - '{Tag}' Tags{/block:TagPage}{block:SearchPage} - '{SearchQuery}' Search{/block:SearchPage}</title>
+        <title>{block:PostSummary}{PostSummary} | {/block:PostSummary}{block:TagPage} Tagged {Tag} | {/block:TagPage}{block:SearchPage} Search {SearchQuery} | {/block:SearchPage}KevinNuut.com</title>
 
         <link rel="shortcut icon" href="{Favicon}"/>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="A personal blog of fashion, design, art, and humor. {block:PostSummary}{PostSummary}{/block:PostSummary}{block:TagPage}'{Tag}' Tags{/block:TagPage}{block:SearchPage}'{SearchQuery}' Search{/block:SearchPage}" />
-        <meta name="keywords" content="kevin, nuut, artwork, tumblr, twitter, blog, design, fashion, shoes, austin, texas" />
+        <meta name="keywords" content="kevin, nuut, art, chatlr, node.js, php, tumblr, blog, design, fashion, austin, texas, {block:Permalink}{block:Posts}{block:Tags}{Tag}, {/block:Tags}{/block:Posts}{/block:Permalink}" />
         <meta name="google-site-verification" content="6-mxNtzO4cvr9jJ2ud1SmXimZBHpQx9TXARLsT_uDik" />
 
-        <link rel="stylesheet" href="http://c715257.r57.cf2.rackcdn.com/rackspace.css" type="text/css" />
+        <link rel="stylesheet" href="http://c715257.r57.cf2.rackcdn.com/rackspace0820.css" type="text/css" />
         <link rel="alternate" href="/rss" type="application/rss+xml" />
 
         <style type="text/css">
@@ -140,8 +140,10 @@ margin: 0 6px 12px 6px;
 							</div>
 							<br class="clear" />
                         </div>
+						<div class="post-footer footer footer-tiny"></div>
                     </div>
                     {/block:Post2}
+					
                     <div class="post">
                         <div class="post-header"></div>
                         <div class="post-body">
@@ -217,34 +219,34 @@ margin: 0 6px 12px 6px;
                                     {block:Caption}
                                     <div class="blog-caption">{Caption}</div>
                                     {/block:Caption} </div>
-                                {/block:Video} <em class="tags"> {block:HasTags}
-                                    {block:Tags}<a href="{TagURL}" title="{URLSafeTag}">{Tag}</a>, {/block:Tags}<br />
+                                {/block:Video} 
+								
+								<div class="tags"> 
+									{block:HasTags}
+										{block:Tags}
+											<a href="{TagURL}" title="{URLSafeTag}" class="bubble">
+												{Tag}
+											</a>
+										{/block:Tags}
                                     {/block:HasTags}
-                                    {block:IndexPage}{block:RebloggedFrom}
-                                    ~ Via <a href="{ReblogParentURL}" title="{ReblogParentTitle}">{ReblogParentName}</a> from <a href="{ReblogRootURL}" title="{ReblogRootTitle}">{ReblogRootName}</a>.
-                                    {/block:RebloggedFrom}{/block:IndexPage}</em> </div>
+									
+                                    {block:IndexPage}
+										{block:RebloggedFrom}
+											<a href="{ReblogParentURL}" title="{ReblogParentTitle}" class="bubble blue">
+												Via {ReblogParentName}
+											</a>
+										{/block:RebloggedFrom}
+										
+										{block:ContentSource}
+											<a href="{SourceURL}" title="{SourceTitle}" class="bubble blue">
+												Source {SourceTitle}
+											</a>
+										{/block:ContentSource}
+									{/block:IndexPage}
+								</div> 
+							</div>
                             <br class="clear" />
                         </div>
-
-                        {block:PostSummary}
-                        <div class="post-body">
-                            <div class="post-content">
-                                <div class="side-google">
-                                    <script type="text/javascript"><!--
-                                        google_ad_client = "pub-7413795255296720";
-                                        /* KevinNuut.com Per Blog Light */
-                                        google_ad_slot = "3920846494";
-                                        google_ad_width = 468;
-                                        google_ad_height = 60;
-                                        //-->
-                                    </script>
-                                    <script type="text/javascript"
-                                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                                    </script>
-                                </div>
-                            </div>
-                        </div>
-                        {/block:PostSummary}
 
                         <!-- Display Notes Box -->
                         {block:PostNotes}
@@ -270,66 +272,81 @@ margin: 0 6px 12px 6px;
                                 <div class="addthis_toolbox addthis_default_style" addthis:title="{Title}" addthis:url="{Permalink}">
                                     <a class="addthis_button_email"></a>
                                     <a class="addthis_button_facebook"></a>
-                                    <a class="addthis_button_digg"></a>
+                                    <a class="addthis_button_google"></a>
                                     <a class="addthis_button_tumblr"></a>
                                     <a class="addthis_button_twitter"></a>
-                                    <a class="addthis_button_myspace" title="Share to MySpace"></a>
-                                    <a class="addthis_button_stumbleupon" title="StumbleUpon"></a>
-                                    <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=TXMdotcom" class="addthis_button_compact">Share</a>
                                 </div>
 
                                 <div class="footer-permalink">
-                                    Wow, <a href="{Permalink}#notes">{NoteCountWithLabel}</a>. Need a <a href="{Permalink}" title="{Title}">Permalink</a>?
+                                    <a href="{Permalink}#notes">{NoteCountWithLabel}</a> | <a href="{Permalink}" title="{Title}">Permalink</a>
                                 </div>
                        	</div>
                     </div>
 
                     {block:PostSummary}
-                    <div class="post-google">
-                        <script type="text/javascript"><!--
-                            google_ad_client = "pub-7413795255296720";
-                            /* KevinNuut.com Per Blog */
-                            google_ad_slot = "2819518508";
-                            google_ad_width = 468;
-                            google_ad_height = 60;
-                            //-->
-                        </script>
-                        <script type="text/javascript"
-                                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                        </script>
-                    </div>
+						<div class="post">
+							<div class="post-header"></div>
+							<div class="post-body">
+								<div class="post-google">
+									<script type="text/javascript"><!--
+										google_ad_client = "pub-7413795255296720";
+										/* KevinNuut.com Per Blog */
+										google_ad_slot = "2819518508";
+										google_ad_width = 468;
+										google_ad_height = 60;
+										//-->
+									</script>
+									<script type="text/javascript"
+											src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+									</script>
+								</div>
+							</div>
+							<div class="post-footer footer footer-tiny"></div>
+						</div>
                     {/block:PostSummary}
 
                     {block:Post4}
-                    <div class="post-google">
-                        <script type="text/javascript"><!--
-                            google_ad_client = "pub-7413795255296720";
-                            /* KevinNuut.com Per Blog */
-                            google_ad_slot = "2819518508";
-                            google_ad_width = 468;
-                            google_ad_height = 60;
-                            //-->
-                        </script>
-                        <script type="text/javascript"
-                                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                        </script>
-                    </div>
+						<div class="post">
+							<div class="post-header"></div>
+							<div class="post-body">
+								<div class="post-google">
+									<script type="text/javascript"><!--
+										google_ad_client = "pub-7413795255296720";
+										/* KevinNuut.com Per Blog */
+										google_ad_slot = "2819518508";
+										google_ad_width = 468;
+										google_ad_height = 60;
+										//-->
+									</script>
+									<script type="text/javascript"
+											src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+									</script>
+								</div>
+							</div>
+							<div class="post-footer footer footer-tiny"></div>
+						</div>
                     {/block:Post4}
 
                     {block:Post8}
-                    <div class="post-google">
-                        <script type="text/javascript"><!--
-                            google_ad_client = "pub-7413795255296720";
-                            /* KevinNuut.com Per Blog */
-                            google_ad_slot = "2819518508";
-                            google_ad_width = 468;
-                            google_ad_height = 60;
-                            //-->
-                        </script>
-                        <script type="text/javascript"
-                                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                        </script>
-                    </div>
+						<div class="post">
+							<div class="post-header"></div>
+							<div class="post-body">
+								<div class="post-google">
+									<script type="text/javascript"><!--
+										google_ad_client = "pub-7413795255296720";
+										/* KevinNuut.com Per Blog */
+										google_ad_slot = "2819518508";
+										google_ad_width = 468;
+										google_ad_height = 60;
+										//-->
+									</script>
+									<script type="text/javascript"
+											src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+									</script>
+								</div>
+							</div>
+							<div class="post-footer footer footer-tiny"></div>
+						</div>
                     {/block:Post8}
 
                     {/block:Posts}
@@ -371,11 +388,11 @@ margin: 0 6px 12px 6px;
                     <img id="side-portrait" src="{PortraitURL-96}" alt="portrait" />
                     
                     <div id="side-body">
-<a href="http://www.tumblr.com/directory/recommend/designers/kevinnuut" title="Recommend Me" class="recommend-me"><strong>+</strong> Recommend Me</a>
-
-<div class="facebook"><iframe src="http://www.facebook.com/plugins/likebox.php?id=117990698235589&amp;width=292&amp;connections=0&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe></div>
-
-<a href ="http://www.behance.net/KevinNuut" target ="_blank" style = "-webkit-box-shadow: white 0px 0px 12px; margin: 12px 0 4px 0; border: none; display: block; height: 60px; background-image:url(http://assets.behance.net//img/portfolio/blue/wide2.jpg?cb=798100946); -webkit-border-radius: 4px; -moz-border-radius:4px;"><img src='http://behance.vo.llnwd.net/e1/userCover?user_id=90284&size=50' style='width:50px !important; height:50px !important; margin-top:5px !important; margin-left:5px !important; float: left !important; border-style:none !important;' /><span style='overflow: hidden !important; height: 0px !important; font-size: 0px !important; line-height: 0px !important; clear:both !important;'></span></a>
+						<div class="facebook">
+							<iframe src="http://www.facebook.com/plugins/likebox.php?id=117990698235589&amp;width=292&amp;connections=0&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>
+						</div>
+						
+						<a href ="http://www.behance.net/KevinNuut" target ="_blank" style = "-webkit-box-shadow: white 0px 0px 12px; margin: 12px 0 4px 0; border: none; display: block; height: 60px; background-image:url(http://assets.behance.net//img/portfolio/blue/wide2.jpg?cb=798100946); -webkit-border-radius: 4px; -moz-border-radius:4px;"><img src='http://behance.vo.llnwd.net/e1/userCover?user_id=90284&size=50' style='width:50px !important; height:50px !important; margin-top:5px !important; margin-left:5px !important; float: left !important; border-style:none !important;' /><span style='overflow: hidden !important; height: 0px !important; font-size: 0px !important; line-height: 0px !important; clear:both !important;'></span></a>
 
                         <div class="side-block" style="margin-bottom: 4px;">
                             <script type="text/javascript"><!--
@@ -399,27 +416,6 @@ margin: 0 6px 12px 6px;
                             </a><a href="http://tumblrchat.com/" class="banner bannerChat" title="Chat with Other Tumblrs!" target="_blank">TumblrChat.com</a><a href="http://youtube.com/lorenandtxm" class="banner bannerAthwt" title="Episodic Machinima Soap Opera with Hamsters!" target="_blank">
                                 ATHWT.com
                             </a><div class="clear"></div>
-                        </div>
-
-                        <div class="side-block">
-                            <div class="side-title padding-bottom-4">PEOPLE I HEART</div>
-                            <a href="http://www.ayankeeintexas.com/" title="A Yankee In Texas" target="_blank">A Yankee In Texas</a> |
-                            <a href="http://albotas.com/" title="Albotas" target="_blank">Albotas</a> |
-                            <a href="http://americaisthebest.com/" title="America Is The Best" target="_blank">America Is The Best</a> |
-                            <a href="http://austin30.org/" title="Austin 3.0" target="_blank">Austin 3.0</a> |
-                            <a href="http://beauty-and-the-brick.blogspot.com/" title="Beauty And The Brick">Beauty And The Brick</a> |
-                            <a href="http://erynchandler.wordpress.com/" title="Cappuccino Chit-Chat" target="_blank">Cappuccino Chit-Chat</a> |
-                            <a href="http://www.eatsleepdraw.com/" title="Eat, Sleep, Draw" target="_blank">Eat, Sleep, Draw</a> |
-                            <a href="http://elmuyawesome.com/" title="El Muy Awesome" target="_blank">El Muy Awesome</a> |
-                            <a href="http://factcheck.org/" title="FactCheck.org" target="_blank">FactCheck</a> |
-                            <a href="http://flacafea.com/" title="Flaca Fea" target="_blank">Flaca Fea</a> |
-                            <a href="http://www.snackordie.com/" title="Snack Or Die" target="_blank">Snack Or Die</a> |
-                            <a href="http://www.blog.spoongraphics.co.uk/" title="Spoon Graphics" target="_blank">Spoon Graphics</a> |
-                            <a href="http://the-jenya.livejournal.com/" title="The Jenya" target="_blank">The Jenya</a> |
-                            <a href="http://thoughtsaremadeofwater.wordpress.com/" title="Thoughts Are Made Of Water" target="_blank">Thoughts Are Made Of Water</a> |
-                            <a href="http://www.truthout.org/" title="TruthOut" target="_blank">TruthOut</a> |
-                            <a href="http://webdesignerwall.com/" title="Web Designer Wall" target="_blank">Web Designer Wall</a> |
-                            <a href="http://www.vinylpulse.com/" title="Vinyl Pulse" target="_blank">Vinyl Pulse</a>
                         </div>
 
                         {block:IndexPage}
