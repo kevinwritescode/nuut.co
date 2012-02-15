@@ -1,0 +1,567 @@
+.addthis_toolbox {
+float: left;
+margin-left: 14px;
+}
+
+.addthis_toolbox a {
+border: none;
+}
+
+.footer-permalink {
+float: right;
+margin-right: 16px;
+}
+
+            .regular img { margin: 4px 8px; }
+
+			.perma-notes .post-content {
+				overflow: auto;
+				padding: 0;
+				width: 533px;
+			}
+			
+			.notes {
+				list-style: none;
+				display: block;
+				max-height: 144px;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.note {
+				display: block;	
+				margin: 0;
+				padding: 8px 16px;			
+			}
+			
+			.noteAlt {
+				background: #FFFDEF;
+			}
+			
+			.note blockquote {
+				display: none;
+			}
+			
+			#dsq-auth {
+				display: none;
+			}
+			
+			body {
+			  background: url(back.gif) no-repeat 50% 0 #434c59 fixed;
+			  margin: 0;
+			  font: Normal 14px Arial, Helvetica, sans-serif;
+			  color: #403a30;
+			  line-height: 1.4;
+			}
+			
+			a[style="font-size: 85%;"] {
+				display: none;
+			}
+			
+			.dsq-widget-meta {
+				font-size: 10px;
+			}
+									
+			.dsq-combo-box {
+				line-height: 1.4 !important;
+				color: #403a30 !important;
+				font: Normal 14px Arial, Helvetica, sans-serif !important;
+				background: none !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+			
+			.dsq-combo-box li {
+				border-bottom: none !important;
+				padding: 0 0 14px 0 !important;
+				margin: 0 !important;
+			}
+			
+			#dsq-combo-tabs li {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.dsq-combo-avatar {
+				display: none;
+			}
+			
+			.dsq-combo-box h3 {
+				display: none;
+			}
+			
+			#dsq-combo-tabs {
+				display: none !important;
+			}
+			
+			#dsq-combo-logo {
+				display: none;
+			}
+			
+			#dsq-options-toggle, #dsq-comments-count {
+				display: none;
+			}
+			
+			#dsq-add-new-comment {
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+			}
+			
+			.dsq-by {
+				display: none;
+			}
+			
+			a {
+				color: #405a80;
+				text-decoration: none;
+				border-bottom: 1px dashed #cfc2a7;
+			}
+			
+			.footer {
+				font-size: 12px;
+				color: #cfc2a7;
+			}
+			
+			#splash {
+			  background: url(back-splash.png) no-repeat 50% 0; 
+			}
+		
+			#frame {
+			  width: 960px;
+			  margin: 0 auto;
+			  background: url(logo.png) no-repeat 100% 0;
+			}
+		
+			#links {
+			  float: left;
+			  width: 391px
+			  height: 128px;
+			  overflow: hidden;
+			  padding-left: 55px;
+			  outline: none;
+			}
+		
+			#links a {
+			  width: 65px;
+			  height: 85px;
+			  margin: 0 2px 5px 2px;
+			  background-position: 0 -8px;
+			  background-repeat: no-repeat;
+			  text-indent: -9999em;
+			  overflow: hidden;
+			  float: left;
+			  border: none !important;
+			}
+		
+			#links a:hover {
+			   background-position: 0 0;
+			}
+		
+			#link-home {
+			  background-image: url(link-home.png);
+			}
+		
+			#link-rss {
+			  background-image: url(link-rss.png);
+			}
+		
+			#link-contact {
+			  background-image: url(link-contact.png);
+			}
+		
+			#link-ask {
+			background-image: url(link-ask.png);
+}
+
+			#link-archive {
+			  background-image: url(link-archive.png);
+			}
+			
+			#search {
+			  background: url(search.png) no-repeat 0 0;
+			  width: 345px;
+			  height: 35px;
+			  margin-left: 2px;
+			}
+			
+			#search-box {
+			  border: none;
+			  background: none;
+			  margin: 7px 3px 7px 7px;
+			  height: 19px;
+			  width: 199px;
+			  padding: 2px 1px 0 1px;
+			  font: Normal 14px Arial, Helvetica, sans-serif;    
+			  display: block;
+			  float: left;
+			}
+		
+		
+			#search-submit {
+			  width: 56px;
+			  height: 21px;
+			  border: none;  
+			  text-indent: -9999em;
+			  cursor: pointer;
+			  margin: 7px 7px 7px 0;
+			  background: none;
+			  font-size: 0.01px;
+			  color: #fff;
+			}
+		
+		
+			#logo {
+			  text-indent: -9999em;
+			  display: block;
+			  width: 546px;
+			  height: 128px;
+			  float: right;
+			  overflow: hidden;
+			  border-bottom: none !important;
+			  outline: none;
+			}
+		
+			.clear {
+			  clear: both;
+			  font-size: 0.01px;
+			  height: 0px;
+			  background: green;
+			}
+		
+			#content { 
+			  width: 600px;
+			  float: left;
+			}
+		
+			#side {
+			  width: 348px;
+			  float: right;
+			  padding: 0 12px 0 0;
+			  margin-top: -34px;
+position: relative;
+			}
+		
+			#side-header {
+			  position: absolute;
+			  background: url(side-header.png) no-repeat 100% 0;
+width: 348px;
+			  height: 311px;
+z-index: 2;
+			}
+
+#side-portrait {
+position: absolute;
+margin: 114px 0 0 235px;
+z-index: 1;
+}
+		
+			#side-icons {
+			  background: url(side-icon.png) no-repeat 100% 0;
+			  height: 71px;
+			}
+		
+			#side-body {
+	 		  margin-top: 311px;
+			  background: url(side-back.png) repeat-y 100% 0;
+			  padding: 0 24px 0 24px;
+			  text-align: justify;
+			  line-height: 1.5em;
+overflow: hidden;
+			}
+		
+			.side-block {
+			  padding: 8px 0 8px 0;
+			}
+		 
+			.side-block ul {
+			  margin: 0;
+			  list-style: none;
+			  padding: 0;
+			}
+		
+			.side-block li {
+			  padding: 4px 0;
+			}
+		
+			.side-title {
+			  font-weight: bold;
+			  font-size: 18px;
+			  margin-bottom: 8px;
+			}
+		  
+			#side-blogged {
+			  text-align: center;    
+			}
+		   
+			#side-blogged a {
+			  border: none !important;
+			}
+		
+			#side-footer {
+			  background: url(side-footer.png) no-repeat 100% 0;
+			  height: 93px;
+			}
+		
+			.post-header {
+			  background: url(post-header.png) no-repeat 100% -5px;
+			  height: 15px;
+			}
+		
+			.post-body {
+			  background: url(post-back.png) repeat-y 100% 0;
+			}
+		
+			.post-flags {
+			  width: 57px;
+			  float: left;
+			}
+		 
+			.post-date {
+			  background: url(post-date.png) no-repeat 0px -16px;
+			  color: #fff;
+			  padding: 6px 6px 6px 13px;
+			  margin-bottom: 4px;
+			  font-weight: bold;
+			}
+		
+			.post-link {
+			  background: url(post-flag.png) no-repeat 22px -16px;
+			  padding: 2px 0 0 35px;
+			  color: #fff;
+			  display: block;
+			  overflow: hidden;      
+			  border-bottom: none !important;
+			  font-size: 22px;
+			}
+
+			.post-google {
+				padding: 10px 0 0 90px;
+			}
+			
+			.pagination a:hover {
+				background: #55A7E3;
+			}
+
+			.pagination a.p-active {
+				background: #FFAA01;
+			}
+			
+			.post-link:hover {
+			  background-position: 0 -16px !important;
+			  padding-left: 13px;
+			}
+		
+			.post-content {
+			  width: 500px;
+			  float: right;
+			  margin-right: 10px;
+			  padding: 12px 17px 0 16px;
+			  border-bottom: 1px dotted #cfc2a7;
+			  background: url(post-back.png) repeat-y -6px 0 #FFF5D5;
+			}
+			
+			.pagination {
+				text-align: center;
+				font-size: 18px;
+				padding-bottom: none !important;
+				border: none;
+			}
+
+			.pagination a {
+				text-decoration: none;
+				border: none;
+				background: #2577B3;
+				color: #fff;
+				padding: 2px 6px;
+				margin: 0 1px;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 2px;
+			}
+		
+			.post-footer {
+				overflow: hidden;
+				width: auto;
+				background: url(post-footer.png) no-repeat 100% 100%;
+				height: 30px;
+				padding: 8px 10px 0 57px;
+				text-align: center;
+				font-size: 12px;		 
+				color: #cfc2a7;
+			}
+			
+			.footer-tiny {
+				height: 15px;
+			}
+		
+			.tags {
+				font-size: 12px;
+				padding-top: 0.5em;
+				text-align: right;
+			}
+		
+			.blog-media {
+			  text-align: center;
+			}    
+			
+			.blog-media img {
+				border-radius: 0.5em;
+			}
+		
+			.blog-media a {
+			  border: none !important; 
+			}
+			
+			.bubble {
+				border-radius: 0.25em 0.25em 0 0;
+				background: #FC8576;
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FC8576), to(#F1413B));
+				border: 1px solid #FF524C;
+				border-bottom: none;
+				display: inline-block;
+				padding: 0.167em 0.5em;
+				color: white;
+				text-decoration: none;
+				max-width: 100px;
+				white-space: nowrap;
+				opacity: 0.25;
+			}
+			
+			.bubble.blue {
+				opacity: 0.5;
+			}
+			
+			.bubble:hover {
+				opacity: 0.75;
+			}
+		
+			.blog-title {
+			  display: block;
+			  font-size: 18px;
+			  font-weight: bold;
+			  padding-bottom: 8px;
+			  margin-bottom: 12px;
+		
+			  border-bottom: 1px dotted #cfc2a7;
+			}
+		
+			.blog-caption {
+			  margin-top: 18px;
+			  padding-top: 12px;
+			  border-top: 1px dotted #cfc2a7;
+			}
+		
+			img {
+			  border: none;
+			}
+   
+			#searchresultcount { 
+				margin: 15px 0;
+				text-align: center;
+			}
+        
+			div.post p {
+			  margin: 0 0 8px 0;
+			  padding: 0;
+			}
+		 
+			div.post div.regular blockquote {
+			  font-style: italic;
+			  margin: 0;
+			  padding: 0 0 0 12px;
+			  border-left: 1px dashed #cfc2a7;
+			}        
+        
+            div.post div.quote span.quote {
+                font-size: 18px;
+            }
+
+.answer img {
+	float: left; 
+	padding: 0 8px 0 0;
+}
+
+.side-google {
+	padding-left: 18px;
+}
+
+.padding-bottom-4 {
+	padding-bottom: 4px;
+}
+
+			div.post div.quote span.quote big.quote {
+				opacity: 0.4;
+				-moz-opacity: 0.4;
+			}
+
+			div.post div.quote span.quote big.quote a {
+				border: none !important;
+			}
+        
+			/* Link Post */
+			div.post div.link a {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			/* Conversation Post */
+			div.post div.conversation ul {
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px 0px 0px 1px;
+				border-left: 1px dashed #cfc2a7;
+	        }
+        
+            div.post div.conversation ul li {
+                padding: 4px 0px 4px 8px;
+                margin-bottom: 1px;
+            }
+        
+			div.post div.conversation ul li span.label {
+				font-weight: bold;
+			}
+   
+			div.post div.conversation ul li.even {
+				background-color: #f2ecd8;
+			}
+	
+			#footer {
+				margin-top: 11px;
+				font-size: 10px;
+			}
+			
+			#bannerDiv {
+				padding-bottom: 16px;
+			}
+
+			.banner {
+				display: block;
+                                float: left;
+				width: 150px;
+				height: 56px;
+				border: none;
+				overflow: hidden;
+				text-indent: -9999em;
+				background: 50% 50% no-repeat;
+			}
+			
+			.bannerTwitter {
+				background-image: url(twitter.png);	
+			}
+			
+			.bannerTsa {
+				background-image: url(thesartorialartist.png);		
+			}
+			
+			.bannerChat {
+				background-image: url(tumblrchat.png);
+			}
+			
+			.bannerTweetup {
+				background-image: url(austintweetup.png);			
+			}
+			
+			.bannerAthwt {
+				background-image: url(athwt.png);			
+			}
